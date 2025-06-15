@@ -1,0 +1,249 @@
+        device-ip {
+            font-size: 0.8em;
+            color: #666;
+            margin-top: 5px;
+        }
+
+        .form-row {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+
+        .device.rgb_light {
+            border-left-color: #2a9d8f;
+        }
+
+        .device.rgb_light .color-picker {
+            width: 40px;
+            height: 40px;
+            border: 2px solid #ddd;
+            border-radius: 50%;
+            cursor: pointer;
+            padding: 0;
+        }
+        .device.rgb_light .color-picker::-webkit-color-swatch {
+            border: none;
+            border-radius: 50%;
+        }
+
+        .device.rgb_light .color-picker::-moz-color-swatch {
+            border: none;
+            border-radius: 50%;
+        }
+
+        .form-row .form-group {
+            flex: 1;
+        }
+
+        .ip-input {
+            font-family: monospace;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"], select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .form-row {
+            display: flex;
+            gap: 15px;
+        }
+
+        .form-row .form-group {
+            flex: 1;
+        }
+
+        .btn-add {
+            background-color: #2196F3;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .btn-add:hover {
+            background-color: #0b7dda;
+        }
+
+        .tabs {
+            display: flex;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .tab {
+            padding: 10px 20px;
+            cursor: pointer;
+            background-color: #f1f1f1;
+            border: 1px solid #ddd;
+            border-bottom: none;
+            border-radius: 5px 5px 0 0;
+            margin-right: 5px;
+        }
+
+        .tab.active {
+            background-color: white;
+            border-bottom: 1px solid white;
+            margin-bottom: -1px;
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        .add-panel {
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .room {
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .room-title {
+            margin-top: 0;
+            color: #444;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        .devices {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .device {
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 8px;
+            background: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .device.off {
+            border-left-color: #f44336;
+        }
+
+        .device-title {
+            margin-top: 0;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .device-type {
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        .controls {
+            margin-top: 15px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        button.off {
+            background-color: #f44336;
+        }
+
+        .slider-container {
+            margin-top: 10px;
+        }
+
+        input[type="range"] {
+            width: 100%;
+        }
+
+        .value-display {
+            text-align: center;
+            font-weight: bold;
+            margin-top: 5px;
+        }
+
+        .device.sensor {
+            border-left: 4px solid #2a9d8f;
+        }
+
+        .sensor-data {
+            margin-top: 10px;
+        }
+
+        .sensor-value {
+            padding: 8px;
+            background: #f0f8ff;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+
+        .device.light {
+            border-left: 4px solid #f4a261;
+        }
+        @media (max-width: 768px) {
+        .device {
+            padding: 10px;
+        }
+
+        .controls {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        }
+        .toggle-btn {
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="color"] {
+            transition: opacity 0.3s ease;
+        }
